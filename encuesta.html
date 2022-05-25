@@ -4,14 +4,170 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon_io/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./Css/styles-form1.css">
+    <script src="./JS/script-form.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@702&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@702&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Lora&family=Montserrat:wght@702&display=swap" rel="stylesheet">
-    <title>Encuesta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400&family=Lora&family=Montserrat:wght@702&display=swap" rel="stylesheet">
+    <title>Home</title>
 </head>
 <body>
-    
+    <div class="main_body">
+        <header>
+            <h1 id="main_header">
+                <span><a href="index.html">DMaledicte</a></span>
+            </h1>
+        </header>
+    <nav id="main_nav">
+        <ul id="main_ul">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="musica.html">Musica</a>
+            </li>
+            <li>
+                <a href="galeria.html">Galeria</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="container_section">
+        <article id="container_parrafo">
+            <h3 class="article-title">Encuesta proxima session</h3>
+            <p>Nos interesa saber tu opinion para los proximos lanzamientos en referencia a que influencias utilizar y por eso te pedimos que rellenes esta encuesta</p>
+        </article>
+        <article id="container_formulario">
+            <form data-multi-step class="multi-step-form" id="regForm">
+                <div class="card" data-step>
+                   <h3 class="step-title">Datos Personales</h3>
+                   <div class="form-group">
+                   <label for="email">Email</label>
+                   <input type="email" name="email" id="email">
+                   </div>
+                   <div class="form-group">
+                   <label for="fname">Nombre</label>
+                   <input type="text" id="nombre" name="fname">
+                   </div>
+                   <div class="form-group">
+                   <label for="lname">Apellido</label>
+                   <input type="text" id="apellido" name="lname">
+                   </div>
+                   <div class="buttontype">
+                   <button class="" type="button" id="nextBtn" onclick="nextPrev(1)" data-next>Siguiente</button>
+                   </div>
+                   </div>
+                <div class="card" data-step>
+                    <div class="form-group">
+                    <h3 class="step-title">Rango de Edad</h3>
+                    <input type="radio" class="inputs" id="r16a20" name="redades" value="r16a20">
+                    <label for="r16a20" class="label-op">16-20</label>
+                    <input type="radio" class="inputs" id="r21a25" name="redades" value="r21a25">
+                    <label for="r16a20" class="label-op">21-25</label>
+                    <input type="radio" class="inputs" id="r26a30" name="redades" value="r26a30">
+                    <label for="r16a20" class="label-op">26-30</label>
+                    <input type="radio" class="inputs" id="r30+" name="redades" value="r30+">
+                    <label for="r30+" class="label-op">30+</label>
+                    <h3 class="step-title">Genero</h3>
+                    <input type="radio" class="inputs" id="fem" name="genero" value="fem">
+                    <label for="fem" class="label-op">Femenino</label>
+                    <input type="radio" class="inputs" id="male" name="genero" value="male">
+                    <label for="male" class="label-op">Masculino</label>
+                    <input type="radio" class="inputs" id="fluid" name="genero" value="fluid">
+                    <label for="fluid" class="label-op">Fluido</label>
+                    </div>
+                    <div class="buttontype">
+                    <button type="button" data-previous>Atras</button>
+                    <button type="button" data-next>Siguiente</button>
+                    </div>
+                </div>
+                <div class="card" data-step>
+                <div class="form-group">
+                    <h3 class="step-title">¿En que red social nos conociste?</h3>
+                    <label for="redes1" class="label-op"> Instagram</label>
+                    <input type="checkbox" class="inputs" id="redes1" name="redes1" value="Instagram">
+                    <label for="redes1" class="label-op"> Twitter</label>
+                    <input type="checkbox" class="inputs" id="redes2" name="redes1" value="Twitter">
+                    <label for="redes1" class="label-op"> Twitch</label>
+                    <input type="checkbox" class="inputs" id="redes3" name="redes1" value="Twitch">
+                    <label for="redes1" class="label-op"> Otras Redes o busqueda Web</label>
+                    <input type="checkbox" class="inputs" id="redes4" name="redes1" value="Otrasopc">
+                    </div>
+                    <div class="buttontype">
+                    <button type="button" data-previous>Atras</button>
+                    <button type="button" data-next>Siguiente</button>
+                    </div>
+                </div>
+                <div class="card" data-step>
+                    <div class="form-group" id="genmus">
+                    <h3 class="step-title">Gustos musicales</h3>
+                    <label for="genre">Que sub-genero de indie te gusta mas?</label>
+                    <select name="genres" id="genre">
+                    <option value=""></option>
+                    <option value="alternative">Alternative</option>
+                    <option value="nyc">NYC</option>
+                    <option value="british">British</option>
+                    </select>
+                    <h5 class="">¿Que bandas o artistas te gustaria ver reversionados en un futuro?</h3>
+                    <label for="ip" class="label-op"> Interpol</label>
+                    <input type="checkbox" class="inputs" id="ip" name="ip" value="interpol">
+                    <label for="am" class="label-op"> Artic Monkeys</label>
+                    <input type="checkbox" class="inputs" id="am" name="ip" value="articMonkeys">
+                    <label for="ct" class="label-op"> C.Tangana</label>
+                    <input type="checkbox" class="inputs" id="ct" name="ip" value="ctangana">
+                    <label for="cb" class="label-op">Catfish and the Bottlemen</label>
+                    <input type="checkbox" class="inputs" id="cb" name="ip" value="catfish">
+                    </div>
+                    <div class="buttontype">
+                    <button type="button" data-previous>Atras</button>
+                    <button type="submit">Submit</button>
+                    </div>
+                </div>
+                </form>
+        </article>
+    </section>
+    <footer id="main_footer">
+        <div id="eventcards">
+        <div id="f_events">
+            <div  class="f_event"  id="f_event1">
+                <h3 class="h_event">Palermo</h3>
+                <p class="p_event">17 de Junio</p>
+            </div>
+            <div class="f_event" id="f_event2">
+                <h3 class="h_event">Puerto Madero</h3>
+                <p class="p_event">26 de Junio</p>
+            </div>
+        </div>
+        <div id="f_event3" style="background: center/cover url(./img/Event3.jpg) no-repeat;">
+                <h3 class="h_event">Mirador Wallner USH</h3>
+                <p class="p_event">9 de Abril <a href="galeria.html">| Ver Galeria |</a></p>
+        </div>
+        </div>
+        <div id="f_footer">
+        <div id="f_links">
+            <div id="f_slider">
+                <div id="slider_p">
+                <p id="slider_a">Sigueme en las redes</p>
+                </div>
+            </div>
+            <div id="redes">
+            <a href="https://www.instagram.com/" class="redesicon"><img src="./img/instagram-logo-36.png" alt="Instagram"></a>
+            <a href="https://soundcloud.com/" class="redesicon"><img src="./img/soundcloud-logo-36.png" alt="Soundcloud"></a>
+            <a href="http://twitter.com" class="redesicon"><img src="./img/twitter-logo-36.png" alt="Twitter"></a>
+            <a href="http://youtube.com" class="redesicon"><img src="./img/youtube-logo-36.png" alt="Youtube"></a>
+            </div>
+        </div>      
+        <div id="licenses">
+            <p id="lic_foot"> &copy; 2022 Todos los derechos reservados</p>
+            </div>
+        </div>  
+    </footer>
+    </div>
 </body>
 </html>

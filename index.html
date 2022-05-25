@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon_io/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./Css/styles.css">
@@ -16,7 +20,9 @@
 <body>
     <div class="main_body">
     <header>
-        <h1 id="main_header">DMaledicte</h1>
+        <h1 id="main_header">
+            <span><a href="index.html">DMaledicte</a></span> 
+        </h1>
     </header>
     <nav id="main_nav">
         <ul id="main_ul">
@@ -24,17 +30,13 @@
                 <a href="index.html">Home</a>
             </li>
             <li>
-                <a href="index.html">Presentacion</a>
-                <ul >
-                    <li><a href="about.html">¿DMaledicte?</a></li>
-                    <li><a href="escritos.html">Escritos</a></li>
-                </ul>
-            </li>
-            <li>
                 <a href="encuesta.html">Encuesta</a>
             </li>
             <li>
                 <a href="musica.html">Musica</a>
+            </li>
+            <li>
+                <a href="galeria.html">Galeria</a>
             </li>
         </ul>
     </nav>
@@ -72,33 +74,38 @@
                 Words can wring tears from the hardest hearts.”</p>
             </blockquote>
         </aside>
-        <p class ="main_p" id="main_p5">
+        <p class="main_p" id="main_p5">
             “Anyone can love a thing because. That's as easy as putting a penny in your pocket.
             But to love something despite. To know the flaws and love them too. That is rare and pure and perfect.” </p>
         </article>
+        <section class="survey_add">
+            <h4>Proxima Session</h4>
+            <p><a href="encuesta.html">Accede a la encuesta haciendo click aquí</a></p>
+        </section>
     </section>
     <footer id="main_footer">
         <div id="eventcards">
         <div id="f_events">
-            <div  class="f_event" style="background-image: url('./img/palermo.jpg');">
+            <div  class="f_event"  id="f_event1">
                 <h3 class="h_event">Palermo</h3>
-                <p class="p_event">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <p class="p_event">17 de Junio</p>
             </div>
-            <div class="f_event" style="background-image: url('./img/puertomadero.jpg');">
+            <div class="f_event" id="f_event2">
                 <h3 class="h_event">Puerto Madero</h3>
-                <p class="p_event">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="p_event">26 de Junio</p>
             </div>
         </div>
-        <div id="f_event3">
-                <h3 class="h_event">Lorem
-                </h3>
-                <p class="p_event">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <div id="f_event3" style="background: center/cover url(./img/Event3.jpg) no-repeat;">
+                <h3 class="h_event">Mirador Wallner USH</h3>
+                <p class="p_event">9 de Abril <a href="galeria.html">| Ver Galeria |</a></p>
         </div>
         </div>
         <div id="f_footer">
         <div id="f_links">
             <div id="f_slider">
+                <div id="slider_p">
                 <p id="slider_a">Sigueme en las redes</p>
+                </div>
             </div>
             <div id="redes">
             <a href="https://www.instagram.com/" class="redesicon"><img src="./img/instagram-logo-36.png" alt="Instagram"></a>
