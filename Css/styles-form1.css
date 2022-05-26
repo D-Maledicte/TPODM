@@ -53,18 +53,19 @@ h1 {
     text-align: center;
 }
 
-span {
+.headeran {
     /*line-height: 1.1;*/
     padding: 0 12px;
     position: relative;
 }
 
-span::before {
+.headeran::before {
     background: linear-gradient(135deg, hsla(45, 35%, 61%, 1) 0%, hsla(43, 16%, 38%, 1) 67%, hsla(252, 6%, 15%, 1) 100%);
     content: 'DMaledicte';
     position: absolute;
     inset: 0;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: titulo 9s infinite;
 }
@@ -191,21 +192,19 @@ p {
 
 #container_formulario{
     width: 50% auto;
-    ;
 }
 
 .card {
     background-color: rgba(53, 52, 64, 1);
     border: 1px solid #333;
-    border-radius: .5rem;
     padding: .5rem;
     max-width: 500px;
     height: 380px;
     margin: 0 auto;
-    animation: fade 250ms ease-in-out forwards;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: .5rem .5rem 0 0;
 }
 
 .step-title {
@@ -261,45 +260,72 @@ p {
     justify-content: space-evenly;
 }
 
-.card.active {
-    animation: slide 250ms 125ms ease-in-out both;
-}
-
 .multi-step-form {
     overflow: hidden;
     position: relative;
 }
 
-.hide {
-    display: none;
-}
-
-@keyframes slide {
-    0% {
-      transform: translateX(200%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
   }
   
-  @keyframes fade {
-    0% {
-      transform: scale(1);
-      opacity: 1;
-    }
-    50% {
-      transform: scale(.75);
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-      transform: scale(0);
-    }
+  /* Marca el paso de formulario actual */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Marca que el paso esta finalizado y validado: */
+  .step.finish {
+    background-color: goldenrod;
   }
 
+
+.card.active {
+    display: flex;
+}
+
+input.invalid {
+    background-color: #ffdddd;
+  }
+
+#botonera {
+    overflow:auto;
+}
+
+#grupo-botonera {
+    display: flex;
+    flex-direction: row;
+    background: rgba(53, 52, 64, 1);
+    width: 504px;
+    max-width: 504px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 7px;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.botones {
+    width: 60px;
+    background: rgba(191, 174, 122, 1);
+    border: none;
+    border-radius: .5rem;
+}
+
+.buttontext {
+    color: #333;
+}
+
+#steps {
+    text-align:center;
+    margin-top:40px;
+}
 
 #main_footer {
     background-color: rgba(196, 197, 199, 1);
@@ -497,9 +523,17 @@ p {
         font-size: 90px;
     }
 
-
     #eventcards {
         gap: 13px;
+    }
+
+    .botones {
+        width: 60px;
+    }
+
+    #steps {
+        text-align:center;
+        margin-top:40px;
     }
 
     #f_links {
@@ -530,20 +564,38 @@ p {
         gap: 10px;
     }
 
-   
+    .botones {
+        width: 60px;
+    }
+
+    #steps {
+        text-align:center;
+        margin-top:40px;
+    }
+
+    #f_footer {
+        height: 50px;
+    }
 
     #f_links {
         margin-top: 5px;
         margin-right: 0px;
         margin-left: -40px;
     }
-
+ 
     #f_slider{
         margin-left: 60px;
     }
-
+    #redes {
+        align-self: center;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        gap: 3px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
     .redesicon img{
-        height: 36px;
+        height: 30px;
         width: auto;
     }
     
@@ -552,8 +604,11 @@ p {
 @media only screen and (max-width: 425px) {
     h1 {
         font-size: 30px;
-        /*text-align: center;*/
         letter-spacing: 5px;
+    }
+
+    body {
+        width: fit-content;
     }
 
     #main_ul {
@@ -580,6 +635,44 @@ p {
         font-size: 15px;
     }
 
+    .main_body {
+        width: 425px;
+    }
+
+
+    #container_section {
+        width: 405px;
+        max-width: 405px;
+        gap: 10px;
+    }
+
+    #container_parrafo {
+        width: 405px;
+        max-width: 405px;
+    }
+
+    #container_formulario{
+        width: 405px;
+        max-width: 405px;
+    }
+    .card {
+        width: 350px;
+        max-width: 350px;
+    }
+
+    #grupo-botonera {
+        width: 354px;
+        max-width: 354px;
+    }
+
+    .botones {
+        width: 60px;
+    }
+
+    #steps {
+        text-align:center;
+        margin-top:40px;
+    }
 
     #f_footer{
         height: 110px;
