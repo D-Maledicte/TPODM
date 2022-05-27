@@ -65,6 +65,7 @@ span::before {
     position: absolute;
     inset: 0;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: titulo 9s infinite;
 }
@@ -182,8 +183,8 @@ blockquote {
     text-align: center;
 }
 
-.splide__slide img {
-    width: 50%;
+.splide__slide iframe {
+    width: 60%;
     height: 100%;
     object-fit: cover;
 }
@@ -510,6 +511,12 @@ blockquote {
         opacity: 1;
         align-content: space-between;
         
+    }
+
+    .splide__slide iframe {
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .imsonia-album {

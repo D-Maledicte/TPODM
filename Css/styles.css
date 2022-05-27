@@ -8,28 +8,13 @@
     filter: invert(1);
 }*/
 
-
-Color Theme Swatches in RGBA
-.Water--Rust-1-rgba { color: rgba(20, 31, 48, 1); }
-.Water--Rust-2-rgba { color: rgba(15, 55, 119, 1); }
-.Water--Rust-3-rgba { color: rgba(4, 146, 161, 1); }
-.Water--Rust-4-rgba { color: rgba(255, 122, 71, 1); }
-.Water--Rust-5-rgba { color: rgba(226, 55, 29, 1);}
-
-/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in RGBA
 .Coreia-Away-2022-1-rgba { color: rgba(242, 242, 242, 1); }
 .Coreia-Away-2022-2-rgba { color: rgba(196, 197, 199, 1); }
 .Coreia-Away-2022-3-rgba { color: rgba(191, 174, 122, 1); }
 .Coreia-Away-2022-4-rgba { color: rgba(53, 52, 64, 1); }
 .Coreia-Away-2022-5-rgba { color: rgba(38, 37, 42, 1); }
-
-/* Color Theme Swatches in RGBA
-Coral-Teal-Gray-1-rgba { color: rgba(255, 72, 87, 1); }
-Coral-Teal-Gray-2-rgba { color: rgba(26, 126, 121, 1); }
-Coral-Teal-Gray-3-rgba { color: rgba(0, 204, 191, 1); }
-Coral-Teal-Gray-4-rgba { color: rgba(114, 242, 235, 1); }
-Coral-Teal-Gray-5-rgba { color: rgba(116, 126, 126, 1); }
- */
+*/
 
 /* Estas son las fuentes que he decidido combinar
 font-family: 'Montserrat', sans-serif; Para encabezados y titulos
@@ -54,7 +39,6 @@ h1 {
 }
 
 span {
-    /*line-height: 1.1;*/
     padding: 0 12px;
     position: relative;
 }
@@ -65,6 +49,7 @@ span::before {
     position: absolute;
     inset: 0;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: titulo 9s infinite;
 }
@@ -112,7 +97,7 @@ p {
 }
 
 .main_p {
-    font-size: 20px;
+    font-size: 22px;
 } 
 
 #main_nav {
@@ -214,17 +199,24 @@ p {
 }
 
 #pquote {
-    background: center/cover url(/TPO/img/quote.jpg) no-repeat;
+    background: center/cover url(../img/Toni-Single-release.jpg) no-repeat;
     grid-column: 3;
     grid-row: 2 / span 2;
-    color:  rgb(105, 177, 105);
-    font-size: 26px;
-    line-height: 0.9;
-    text-align: center;
-    padding: 25px;
+    padding: 50px;
     margin: 2px;
     border-radius: 5px;
+}
 
+#pquote p {
+    font-size: 26px;
+    color:  goldenrod;
+    line-height: 0.8;
+    text-align: center;
+    margin-top: 260px;
+}
+
+#pquote a {
+    text-decoration: none;
 }
 
 #main_p4 {
@@ -485,6 +477,10 @@ p {
         font-size: 90px;
     }
 
+    .main_p {
+        font-size: 20px;
+    }
+
     @keyframes survey {
         0%   {left:0px;}
       20%  {left:75px;}
@@ -527,13 +523,17 @@ p {
         gap: 10px;
     }
 
+    .main_p {
+        font-size: 20px;
+    }
+
     #main_p3 { 
         grid-column: 1 / span 3;
         grid-row: 3;
     }
 
     #pquote {
-        background: center/cover url(/TPO/img/quote.jpg) no-repeat;
+        background: center/cover url(../img/Toni-Single-release.jpg) no-repeat;
         grid-column: 3;
         grid-row: 2;
     }
@@ -608,6 +608,7 @@ p {
     }
 
     #pquote {
+        background: cover url(../img/Toni-Single-release.jpg) no-repeat;
         grid-column: 3;
         grid-row: 2;
     }

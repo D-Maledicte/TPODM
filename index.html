@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Incorpore distintos tipos del mismo favicon para mayor compatibilidad-->
     <link rel="icon" type="image/x-icon" href="./img/favicon_io/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
@@ -18,12 +19,15 @@
     <title>Home</title>
 </head>
 <body>
+    <!--El proposito de main_body es el de contar con una clase adicional para lograr el contraste el fondo del body y el fondo de las secciones-->
     <div class="main_body">
+    <!--Animacion incorporada en el header para realizar un cambio de color gradiente-->
     <header>
         <h1 id="main_header">
             <span><a href="index.html">DMaledicte</a></span> 
         </h1>
     </header>
+    <!--Nav con transiciones al pasar el mouse efectuando un cambio de color-->
     <nav id="main_nav">
         <ul id="main_ul">
             <li>
@@ -40,49 +44,47 @@
             </li>
         </ul>
     </nav>
+    <!--Seccion principal con varios parrafos que comparten grid con un aside en forma de blackquote-->
     <section id="container_section">
         <article id="container_article">
-        <p class ="main_p" id="main_p1">“There are three things all wise men fear: the sea in storm, a night with no moon, and the anger of a gentle man.” </p>
+        <p class ="main_p" id="main_p1">Bienvenido a DMaledicte. La pagina del artista, donde podras encontrar un acceso rapido a los lanzamientos mas recientes </p>
 
-        <p class ="main_p" id="main_p2">“Perhaps the greatest faculty our minds possess is the ability to cope with pain. 
-            Classic thinking teaches us of the four doors of the mind, which everyone moves through according to their need.
-            First is the door of sleep. Sleep offers us a retreat from the world and all its pain. 
-            Sleep marks passing time, giving us distance from the things that have hurt us. 
-            When a person is wounded they will often fall unconscious. 
-            Similarly, someone who hears traumatic news will often swoon or faint. 
-            This is the mind's way of protecting itself from pain by stepping through the first door.
-            
-            
-            
+        <p class ="main_p" id="main_p2">“DMaledicte surgio como un proyecto unipersonal puramente independiente con el cual mi intencion en primera instancia 
+            fue compartir mi gusto por la musica y por sobre todas las cosas, la buena musica.
+            Aquella que nace dentro de nosotros y debemos expresarla de alguna manera que nos permita revivirla cada vez que queramos 
+            Con un microfono condensador, un conocimiento basico de edicion de audio y una calidad que no pretende asemejarse a una de estudio,
+            voy subiendo temas que disfruto de escuchar y a su vez de interpretar
+            (Siempre y cuando me permitan los derechos de dichos temas por supuesto). 
         </p>
 
-        <p class ="main_p" id="main_p3">Second is the door of forgetting. Some wounds are too deep to heal, or too deep to heal quickly. 
-            In addition, many memories are simply painful, and there is no healing to be done. The saying 'time heals all wounds' is false. 
-            Time heals most wounds. The rest are hidden behind this door.
-            </p>
+        <p class ="main_p" id="main_p3">“Cigarette Daydreams es la ultima reversion que he lanzado. 
+            Cage the Elephant es una banda que me lleva a rememorar otras epocas  
+            Con sus letras solidas pero sin mucho lugar a la interpretacion transmiten en la medida justa aquello que quieren transmitir
+        </p>
 
-        <p class ="main_p" id="main_p4">Third is the door of madness. There are times when the mind is dealt such a blow it hides itself in insanity. 
-            While this may not seem beneficial, it is. 
-            There are times when reality is nothing but pain, and to escape that pain the mind must leave reality behind.
-            Last is the door of death. The final resort. Nothing can hurt us after we are dead, or so we have been told.”</p>
+        <p class ="main_p" id="main_p4">Con influencias del rock indie britanico y estadounidense a la par se pueden encontrar bandas como
+            Interpol, Arctic Monkeys, Catfish and the Bottlemen e incluso QOTSA como mis principales referentes
+            a la de ponerle una influencia acustica a mi voz. Interpretando temas mayoritariamente en ingles siento que esta es una manera
+            muy gratificante de expresarme y compartir todas aquellas emociones que uno siente al cantar 
+        </p>
 
         <aside id="pquote">
             <blockquote>
-               <p>“Words are pale shadows of forgotten names. 
-                As names have power, words have power. 
-                Words can light fires in the minds of men. 
-                Words can wring tears from the hardest hearts.”</p>
+               <a href="musica.html"> <p>“Cigarette Daydreams ya disponible”</p></a>
             </blockquote>
         </aside>
         <p class="main_p" id="main_p5">
-            “Anyone can love a thing because. That's as easy as putting a penny in your pocket.
-            But to love something despite. To know the flaws and love them too. That is rare and pure and perfect.” </p>
+            “Using words to talk of words is like using a pencil to draw a picture of itself, on itself. 
+            Impossible. Confusing. Frustrating ... but there are other ways to understanding.”  
+        </p>
         </article>
+        <!--Seccion de anuncio con animacion de desplazamiento siempre y cuando el ancho de pagina lo permita-->
         <section class="survey_add">
             <h4>Proxima Session</h4>
             <p><a href="encuesta.html">Accede a la encuesta haciendo click aquí</a></p>
         </section>
     </section>
+    <!--Footer con un diseño de cartas desplegadas en grid y luego corregidas por grupo con flex-->
     <footer id="main_footer">
         <div id="eventcards">
         <div id="f_events">
