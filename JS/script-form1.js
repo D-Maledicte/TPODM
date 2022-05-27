@@ -96,7 +96,7 @@ function validateForm() {
     var select = document.getElementById('genre').selectedIndex
     if(select == null || select == 0) {
       valid = false
-      alert('Por favor seleccione una de las opciones en genero musical')
+      alert('Por favor seleccione una de las opciones en sub-genero')
       return
     } else {
       valid = true
