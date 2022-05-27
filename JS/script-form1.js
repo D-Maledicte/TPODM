@@ -48,25 +48,27 @@ function validateForm() {
   y = x[currentTab].getElementsByTagName("input");
   // realizamos una comprobacion en cada uno de las pestañas por separado en busca de ciertos requisitos en cada uno de los campos
   if (currentTab == 0) {
-    var nombre = document.getElementById('nombre').value;
-    if(nombre.length == 0) {
-      document.getElementById('nombre').className += " invalid"
-      valid = false
-      alert('No has escrito nada en el usuario')
-      return
-  }
     var email = document.getElementById('email').value;
     if(email.length == 0) {
         document.getElementById('email').className += " invalid";
         valid = false
-        alert('No has escrito nada en el email');
+        alert('Por favor inserte un email');
         return
     }
+
+    var nombre = document.getElementById('nombre').value;
+    if(nombre.length == 0) {
+      document.getElementById('nombre').className += " invalid"
+      valid = false
+      alert('Por favor inserte un nombre')
+      return
+  }
+    
     var apellido = document.getElementById('apellido').value;
     if(apellido.length == 0) {
         document.getElementById('apellido').className += " invalid";
         valid = false
-        alert('No has escrito nada en el apellido');
+        alert('Por favor inserte un apellido');
         return
     }
   }
