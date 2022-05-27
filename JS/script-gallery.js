@@ -8,6 +8,7 @@ for (var i=0; i<img.length; i++){
     
     img[i].onclick = function(){
     modal.style.display = "block";
+    //se reemplaza el src con una imagen de mejor calidad alojada en un data
     modalImg.src = this.getAttribute("data-image");
     modalImg.alt = this.alt;
     captionText.innerHTML = this.alt;
