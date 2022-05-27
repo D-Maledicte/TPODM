@@ -20,21 +20,63 @@ Nav con transiciones al pasar el mouse efectuando un cambio de color-->
 
 
 Seccion principal con varios parrafos que comparten grid con un aside en forma de blackquote-->
+![image](https://user-images.githubusercontent.com/95052865/170642532-5fd8b23f-cd54-4ad0-adfe-c94266ec9902.png)
+
+
 Seccion de anuncio con animacion de desplazamiento siempre y cuando el ancho de pagina lo permita-->
+![image](https://user-images.githubusercontent.com/95052865/170642637-206bf6f4-0259-4131-a49f-28bc8595aa15.png)
+
+
+
 Footer con un diseño de cartas desplegadas en grid y luego corregidas por grupo con flex-->
+![image](https://user-images.githubusercontent.com/95052865/170642688-e7042966-cc9f-4bee-abc5-5d4550b27952.png)
+
+
+
 Encuesta -
 Formulario multipagina diagramado en html, estilizado en css y con interaccion mediante JavaScript-->
+![image](https://user-images.githubusercontent.com/95052865/170642861-11197f30-53c1-4c15-99b9-e1aa32ab7b90.png)
+![image](https://user-images.githubusercontent.com/95052865/170642906-00b6f4eb-a868-4fa2-a598-a922f6cbe851.png)
+
+
+
 Musica -
 Plantilla de CSS adicional donde se incorpora el estilo mas minimalista del carrusel para evitar afectar el diseño integral de la pagina-->
+![image](https://user-images.githubusercontent.com/95052865/170643074-13fe1e5b-69f5-4034-8ab5-72c70a5fd376.png)
+
+
 Script inicial para asegurar de cargar el carrusel correctamente-->
+![image](https://user-images.githubusercontent.com/95052865/170643109-425ce692-5cfc-4096-8018-6565cda066bb.png)
+
+
+
 Carrusel de splidejs incorporado por medio de NPM y adaptando el ancho del contenido iframe dentro-->
+![image](https://user-images.githubusercontent.com/95052865/170643283-53e50e93-bc14-4f0e-aecf-d57116b90369.png)
+
+
+
 Iframe incorporado para añadir una lista expandida del contenido mostrado en el carrusel-->
+![image](https://user-images.githubusercontent.com/95052865/170643337-c8d6bafd-5980-44ca-95ee-bef4dc85d72f.png)
+
+
+
 Script necesario para el funcionamiento del carrusel-->
+![image](https://user-images.githubusercontent.com/95052865/170643372-5ee1b4db-836a-48d0-bfb1-2640b734fbd9.png)
+
+
+
 Galeria -
 Galeria full responsive con interaccion al hacer click desplegando un zoom de la imagen con el fondo oscurecido para mejor apreciacion-->
+![image](https://user-images.githubusercontent.com/95052865/170643495-b8f8b0f8-e172-4b46-9ed6-4eb0d77a2a7e.png)
+
 
 JavaScript:
 JSForm -
+![image](https://user-images.githubusercontent.com/95052865/170643616-57ac58db-ca1a-408e-9ed9-e6a328b86f2a.png)
+![image](https://user-images.githubusercontent.com/95052865/170643764-0810c4ea-3101-4dd1-bb63-3d2a9862a2a3.png)
+![image](https://user-images.githubusercontent.com/95052865/170643824-e7c7f948-855a-41d7-8b49-1d6f881cc97d.png)
+![image](https://user-images.githubusercontent.com/95052865/170643862-6b2ba5bf-379e-44bf-a0d5-01c38da1de85.png)
+
 Define la pestaña como la primera (0)-->
 Muestra la pestaña actual-->
 Esta funcion mostrara en pantalla la pestaña actual del formulario-->
@@ -54,7 +96,12 @@ devuelve el estatus de validacion-->
 Esta funcion quita la clase "active" de todas las pestañas-->
 y añade "active" a la pestaña actual-->
 
-JSGallery
+JSGallery:
+![image](https://user-images.githubusercontent.com/95052865/170643962-b542dcdc-8729-4176-a123-79cf22037442.png)
+![image](https://user-images.githubusercontent.com/95052865/170643999-15bed941-f18a-4490-80ff-70417809a1fa.png)
+
+
+
 Llama al div modal y recopila sus id, selecciona los img con la clase "thumbnail" y efectua el pop-up con el img correcto dependiendo de en cual se clickee-->
 Se reemplaza el src con una imagen de mejor calidad alojada en un data-->
 Efectua la animacion de cerrar el pop-up con la imagen-->
