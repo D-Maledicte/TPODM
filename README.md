@@ -72,6 +72,8 @@ Galeria full responsive con interaccion al hacer click desplegando un zoom de la
 
 JavaScript:
 JSForm -
+
+
 ![image](https://user-images.githubusercontent.com/95052865/170643616-57ac58db-ca1a-408e-9ed9-e6a328b86f2a.png)
 ![image](https://user-images.githubusercontent.com/95052865/170643764-0810c4ea-3101-4dd1-bb63-3d2a9862a2a3.png)
 ![image](https://user-images.githubusercontent.com/95052865/170643824-e7c7f948-855a-41d7-8b49-1d6f881cc97d.png)
