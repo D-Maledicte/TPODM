@@ -3,11 +3,22 @@ Pagina del TPO
 Se añadieron los siguientes comentarios que se encuentran ubicados dentro de cada archivo para detallar las funcionalidades mas llamativas/complejas/importantes de cada uno de los html
 HTML :
 Index - 
-Incorpore distintos tipos del mismo favicon para mayor compatibilidad--> ![image](https://user-images.githubusercontent.com/95052865/170641630-6103056a-aa62-4b56-bddd-c7eba90a8ae8.png)
-El proposito de main_body es el de contar con una clase adicional para lograr el contraste el fondo del body y el fondo de las secciones--> ![image](https://user-images.githubusercontent.com/95052865/170642065-6fa4fa23-99e6-45f7-a4a9-60a98840c3ba.png)
-Animacion incorporada en el header para realizar un cambio de color gradiente--> ![image](https://user-images.githubusercontent.com/95052865/170642191-6bddc1c8-7849-4d02-be1f-591ec36717b5.png)
+Incorpore distintos tipos del mismo favicon para mayor compatibilidad--> 
+![image](https://user-images.githubusercontent.com/95052865/170641630-6103056a-aa62-4b56-bddd-c7eba90a8ae8.png)
+
+
+El proposito de main_body es el de contar con una clase adicional para lograr el contraste el fondo del body y el fondo de las secciones--> 
+![image](https://user-images.githubusercontent.com/95052865/170642065-6fa4fa23-99e6-45f7-a4a9-60a98840c3ba.png)
+
+
+Animacion incorporada en el header para realizar un cambio de color gradiente--> 
+![image](https://user-images.githubusercontent.com/95052865/170642191-6bddc1c8-7849-4d02-be1f-591ec36717b5.png)
+
 
 Nav con transiciones al pasar el mouse efectuando un cambio de color-->
+![image](https://user-images.githubusercontent.com/95052865/170642372-f8d04d47-a515-46d0-838f-da4c717ff13d.png)
+
+
 Seccion principal con varios parrafos que comparten grid con un aside en forma de blackquote-->
 Seccion de anuncio con animacion de desplazamiento siempre y cuando el ancho de pagina lo permita-->
 Footer con un diseño de cartas desplegadas en grid y luego corregidas por grupo con flex-->
