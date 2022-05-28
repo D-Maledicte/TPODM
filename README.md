@@ -38,6 +38,10 @@ Formulario multipagina diagramado en html, estilizado en css y con interaccion m
 ![image](https://user-images.githubusercontent.com/95052865/170642861-11197f30-53c1-4c15-99b9-e1aa32ab7b90.png)
 ![image](https://user-images.githubusercontent.com/95052865/170642906-00b6f4eb-a868-4fa2-a598-a922f6cbe851.png)
 
+Transicion incorporada en el nav-->
+![image](https://user-images.githubusercontent.com/95052865/170805160-77ce364d-ccb9-47cf-9f5b-87f6b79e9209.png)
+
+
 
 
 Musica -
