@@ -50,6 +50,8 @@ Plantilla de CSS adicional donde se incorpora el estilo mas minimalista del carr
 
 
 Script inicial para asegurar de cargar el carrusel correctamente-->
+
+
 ![image](https://user-images.githubusercontent.com/95052865/170643109-425ce692-5cfc-4096-8018-6565cda066bb.png)
 
 
