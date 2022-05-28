@@ -1,6 +1,7 @@
 # TPODM
 Pagina del TPO
 Se añadieron los siguientes comentarios que se encuentran ubicados dentro de cada archivo para detallar las funcionalidades mas llamativas/complejas/importantes de cada uno de los html
+Los puntos de corte elegidos han sido los mas estandarizados (1440 (PC de escritorio), 1024 (Laptop), 768 (Tablet) y 425 (Movil en landscape))
 HTML :
 Index - 
 Incorpore distintos tipos del mismo favicon para mayor compatibilidad--> 
